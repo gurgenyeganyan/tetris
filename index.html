@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>TETRIS</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/gif" href="images/favicon.ico"/>
+</head>
+    <body>
+        <div id="header">
+           <h1>THE TETRIS</h1>
+        </div>
+        <div id="game-row"><div id="side" >
+                <div id="preview"> <div>Next:</div> 
+                </div>
+                <div id="stats">
+                    <div id="score"></div>
+                    <div id="level"></div>
+                    <div id="lines"></div>
+                    <div id="highscores">Highscores:</div>
+                </div>
+        </div>
+        <div id="game-container">
+            <div id="message-box">   
+            </div>
+        </div>
+        <div id="controls" >
+            <div id="moves">
+                    <div id="pause-play">
+                            <button id="pause">P &#10073;&#10073;</button>
+                            <button id="restart">R &#x2B6E;</button>
+                        </div>
+                <div id="upper-moves">
+                        <button type="button" id="left">A &larr;</button>   
+                        <button type="button" id="right">D &rarr;</button>
+                </div>
+                <div>
+                        <button type="button" id="l-rot">Q &#8630;</button>
+                        <button type="button" id="down">S &darr;</button>
+                        <button type="button" id="r-rot">E &#8631;</button>           
+                </div>
+            </div>
+        </div></div>
+        <script src="tetris.js">
+        </script>
+    </body>
+</html>

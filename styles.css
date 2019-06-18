@@ -1,0 +1,139 @@
+body {
+    font-family: 'Orbitron', sans-serif;
+    background: #c5c9c8;
+}
+
+#header {
+    text-align: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#game-row {
+    display: flex;
+    justify-content: center;
+    vertical-align: center;
+    flex-flow: row nowrap
+}
+
+
+
+#game-container {
+    justify-self: center;
+    display: flex;
+    flex-flow: column nowrap;
+    border: 6px solid #353638;
+    border-radius: 4px;
+}
+
+#side {
+    margin:10px;
+    height: 50%;
+    font-size: 20px;
+    min-width: 180px;
+}
+
+#controls {
+    display: flex;
+    flex-flow: column nowrap;
+    align-self: flex-start;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0 0 30px;
+}
+#moves {
+    align-self: flex-end;
+}
+
+#pause-play {
+    align-self: flex-start;
+    justify-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+#pause-play > button {
+    min-width: 70px;
+    min-height: 50px;
+}
+
+#upper-moves {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+}
+
+#right {
+
+}
+
+.js-row {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.pre-cell {
+    margin: 1px;
+    width: 17px;
+    height: 17px;
+    background: #c5c9c8;
+    border-radius: 2px;
+}
+
+.cell {
+    border-radius: 3px;
+    background: #837c7c;
+    margin: 1px;
+    width: 22px;
+    height: 22px;
+    min-width: 10px;
+    min-height: 10px;
+}
+
+.active-button {
+    background-color: #353638;
+    color: #c5c9c8;
+}
+
+button {
+    border-radius: 15px;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 20px;
+    background:#837c7c;
+}
+
+button:focus {
+    outline: none;
+}
+
+#restart, #pause{
+    border-radius: 30px;
+}
+
+#message-box {
+    position: absolute;
+    z-index: +1;
+    width: 180px;
+    height: 180px;
+    background-color: #94a19ecc;
+    font-weight: bold;
+    letter-spacing: 3px;
+    align-self: center;
+    justify-self: center;
+    margin-top: 100px;
+    border-radius: 10px;
+    visibility: hidden;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+
+.to-be-deleted > div {
+    background: #e06363;
+}
