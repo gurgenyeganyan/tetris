@@ -335,6 +335,7 @@ let followingTetro = tetroes[randomTo(tetroes.length)],
     followingState = followingTetro.states[randomTo(followingTetro.states.length - 1)];
 
 function pauseGame() {
+    if(isGameOver) return;
     if(isPaused) {
         pauseB.innerHTML = "P &#10073;&#10073;";
         pauseB.classList.remove("active-button");
@@ -763,7 +764,7 @@ rightB.addEventListener("mousedown", goRight);
 downB.addEventListener("mousedown", goDown);
 eB.addEventListener("mousedown", turnClockwise);
 qB.addEventListener("mousedown", turnCounterClockwise);
-pauseB.addEventListener("click", pauseGame);
+pauseB.addEventListener("mousedown", pauseGame);
 restartB.addEventListener("mousedown", restartGame);
 
 
@@ -797,7 +798,7 @@ function startGame() {
 function gameOver(){
     isGameOver = true;
     clearInterval(propagate);
-    pauseB.removeEventListener("click", pauseGame);
+    //pauseB.removeEventListener("mousedown", pauseGame);
     leftB.removeEventListener("mousedown", goLeft);
     rightB.removeEventListener("mousedown", goRight);
     downB.removeEventListener("mousedown", goDown);
